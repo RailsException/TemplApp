@@ -1,4 +1,6 @@
 TemplApp::Application.routes.draw do
+  get "users/index"
+
   get "home/index"
 
   # The priority is based upon order of creation:
