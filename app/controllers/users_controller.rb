@@ -10,6 +10,7 @@ before_filter :check_login, :check_adminorpriest, :only => :index
   end
 
   def create  	
+    params[:user][:role] = "user"
   	@user = User.new(params[:user])
   	if @user.save
   		flash[:state] = true

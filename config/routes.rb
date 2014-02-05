@@ -1,8 +1,9 @@
 TemplApp::Application.routes.draw do
   
+  get "fgridreturns/getalldonars"
+
   get "donars/listalldonars"
-  
- resources :mservices
+  resources :mservices
   
   get "donars/listdonars"
 

@@ -81,6 +81,7 @@
               <input class="submit_image" width="36" type="image" height="17" value="submit" name="submit" src="/assets/default/loginbutton.gif">
             </form>
           <% else %>
+            <%= session[:user_role] %>
             <%= link_to "logout", logout_path %>
           <% end %>
       </div>

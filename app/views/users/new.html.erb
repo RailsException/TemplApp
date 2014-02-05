@@ -70,10 +70,6 @@ font-weight:bold;
 			<%= user.password_field(:password_confirmation) %>
 		</div>
 		<div>
-			<%= user.label(:role, "Role") %>
-			<%= user.text_field(:role) %>
-		</div>
-		<div>
 			<%= submit_tag "Register" %>
 		</div>
 	<% end %>
