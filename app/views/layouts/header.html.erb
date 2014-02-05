@@ -32,12 +32,12 @@
             <li><a href="#">Edit Profile</a></li>
            </ul>
           </li>  
-        <%  elsif session['user_id'] && session['user_role'] == "AdminUser" %>  
+        <%  elsif session['user_id'] && session['user_role'] == "Adminuser" %>  
          <li class='has-sub' style="float:right"><a href='#'><span>Admin links</span>
           <ul> 
             <li><a href="#">My Donations</a></li>
             <li><a href="#">Edit Profile</a></li>
-            <li><a href="#">List All Donars</a></li>
+            <li><a href="/donars/listalldonars">List All Donars</a></li>
             <li><a href="#">List All Donations</a></li>
             <li><a href="#">Donations Report</a></li>
             <li><a href="#">Priest Calendar</a></li>
